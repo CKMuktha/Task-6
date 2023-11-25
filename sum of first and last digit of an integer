@@ -1,0 +1,12 @@
+number=5678
+ 
+sum=number % 10
+
+while number > 9:
+ 
+    number = number // 10
+ 
+sum+=number
+ 
+
+print('Addition of first and last digit of number is', sum)

@@ -1,0 +1,13 @@
+list=[10,501,22,37,100,999,87,351]
+count=0
+prime_list=[]
+
+for num in list:
+    
+    for i in range(2,num+1):
+      if num%i==0:
+        count+=1
+        
+prime_list.append(num)  
+    
+print(prime_list)        

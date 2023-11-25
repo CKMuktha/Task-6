@@ -1,0 +1,20 @@
+list1=[10,501,22,37,100,999,87,351]
+happy_number=[]
+count=0
+for n in list1:
+    x=n
+    while x>=10:
+        sum=0
+        while x>0:
+           r=x%10          # finding  individual digits in n
+           sum=sum+(r**2)  # sum of  squares of each digit in n
+           x=x//10         # reducing the digits
+           
+        x=sum
+
+    if x==1:
+       count+=1
+       happy_number.append(n)
+    
+print(count)    
+print(happy_number)

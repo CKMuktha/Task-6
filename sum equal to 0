@@ -1,0 +1,20 @@
+#program to find a sub-list with sum equal to 0
+
+my_list = [4, 2, -3, 1, 6]
+found_sublist = False            #initializing flag to false
+
+
+for i in range(len(my_list)):          #fixing first number as i
+    sum1 = 0
+    for j in range(i, len(my_list)):    #fixing second number as j
+        sum1 += my_list[j]              # adding sum1 to j
+        if sum1 == 0:
+            found_sublist = True         # if sum is 0 then flag is true
+            break
+    if found_sublist:                    # checking if flag is true
+        print("Sublist")
+        break
+
+
+if not found_sublist:
+    print("No Sublist")

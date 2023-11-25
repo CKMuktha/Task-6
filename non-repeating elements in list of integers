@@ -1,0 +1,19 @@
+#program to find non-repeating elements in  lists
+
+#program to find non-repeating elements 
+
+list1=[1,2,2,3,4,4,5,6,7,7]
+n=len(list1)
+temp=None
+
+for i in range(n):          #iterating each elemnt in list1
+   count=0        
+   if list1[i]==temp:      #checking  if list1[i] is in temp
+       count+=1            #if list1[i] is in temp then increase the count
+   else :
+       if count==1:        
+          print(temp)
+       temp=list1[i]    #if count is not 1 then store list1[i] in temp 
+       count=1
+       
+print(list1[n-1])

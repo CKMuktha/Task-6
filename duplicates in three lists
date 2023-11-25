@@ -1,0 +1,10 @@
+list1=[1,2,3,4,"geeks"]
+list2=[3,4,5,6 ,"geeks"]
+list3=["geeks",4,5,6,7]
+
+duplicates=[]
+
+for i in list1:
+    if i in list2 and i in list3:
+        duplicates.append(i)
+print(duplicates)        

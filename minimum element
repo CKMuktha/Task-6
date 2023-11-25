@@ -1,0 +1,14 @@
+#program to find the minimum element
+
+mylist=[6,9,3,5,0]
+
+mylist.sort()
+n=len(mylist)
+
+#assigning greater number in a list to compare with other numbers
+min_ele=mylist[-1]
+
+for i in range(n):
+    if mylist[i]<min_ele:      #comparing each number in list to smaller number in  a list
+        min_ele=mylist[i]
+print(min_ele)        
