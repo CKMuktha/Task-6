@@ -1,15 +1,20 @@
-list=[10,501,22,37,100,999,87,351]
-even_list=[]
-odd_list=[]
+#program to create odd number and even number lists from a given list 
 
-for i in list:
-    if i%2==0:
-        even_list.append(i)
+list=[10,501,22,37,100,999,87,351]
+
+even_list=[]                    #creating empty even number list 
+odd_list=[]                     #creating empty odd number list 
+
+for i in list:                  #iterating to check each number
+    if i%2==0:                  #checking if i is even 
+        even_list.append(i)     #if i is even adding it to even number list
     else:
-        odd_list.append(i)    
+        odd_list.append(i)      #if i is not even adding it to odd number list
 
 print(even_list)        
 print(odd_list)
+
+
 
 
 
