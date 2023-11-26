@@ -1,10 +1,12 @@
+#program to find a duplicates in three lists  
+
 list1=[1,2,3,4,"geeks"]
 list2=[3,4,5,6 ,"geeks"]
 list3=["geeks",4,5,6,7]
 
-duplicates=[]
+duplicates=[]        #creating emply duplicate list
 
-for i in list1:
-    if i in list2 and i in list3:
-        duplicates.append(i)
+for i in list1:       
+    if i in list2 and i in list3:       # checking if i is preent in list 2 and list 3
+        duplicates.append(i)            # if is present is 3 lists adding i to suplicate list
 print(duplicates)        
