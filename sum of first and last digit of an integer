@@ -1,3 +1,4 @@
+#Program to find the sum of first and last digit of an integer
 number=5678
 
 #reducing number to 3 digit
