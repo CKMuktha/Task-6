@@ -2,8 +2,8 @@
 
 mylist=[6,9,3,5,0]
 
-mylist.sort()
-n=len(mylist)
+mylist.sort()  #sorting list in ascending order
+n=len(mylist)  
 
 #assigning greater number in a list to compare with other numbers
 min_ele=mylist[-1]
