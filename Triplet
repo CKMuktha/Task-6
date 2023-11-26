@@ -1,11 +1,13 @@
-list=[10,20,30,9]
-sum=59
+#program to find a triplet  that sum to a given value
+
+list=[10,20,30,9]   # input list
+sum=59              #adding three numbers from above list we should get a value 59
 list_size=len(list)
 
 
-for i in range(0, list_size-2):
-    for j in range(i+1, list_size-1):
-        for k in range(j+1, list_size):
+for i in range(0, list_size-2):             # Fix the first element as list[i]
+    for j in range(i+1, list_size-1):       # Fix the second element as list[j]
+        for k in range(j+1, list_size):     #fix the third element as list[k]
             if list[i]+list[j]+list[k]==sum:
                 print("triplet is ", list[i],list[j],list[k])
                 
