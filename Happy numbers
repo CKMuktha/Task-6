@@ -1,8 +1,10 @@
+#Program to print happy numbers from a list  
+
 list1=[10,501,22,37,100,999,87,351]
-happy_number=[]
-count=0
-for n in list1:
-    x=n
+happy_number=[]                       #creating empty happy number list
+count=0                               # initializing count to 0
+for n in list1:                       # iterating every number n in list1
+    x=n                               #assigning n to x 
     while x>=10:
         sum=0
         while x>0:
@@ -12,9 +14,9 @@ for n in list1:
            
         x=sum
 
-    if x==1:
-       count+=1
-       happy_number.append(n)
+    if x==1:                  
+       count+=1                 #if sum is 1 then increasing count to 1
+       happy_number.append(n)   
     
 print(count)    
 print(happy_number)
