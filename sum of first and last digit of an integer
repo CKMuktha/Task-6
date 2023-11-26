@@ -1,12 +1,13 @@
-number=5678
- 
+umber=5678
+
+#reducing number to 3 digit
 sum=number % 10
 
+#checking if number is morethan 1 digit so that to add
 while number > 9:
  
     number = number // 10
  
 sum+=number
  
-
 print('Addition of first and last digit of number is', sum)
