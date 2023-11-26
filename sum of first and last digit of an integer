@@ -1,4 +1,4 @@
-umber=5678
+number=5678
 
 #reducing number to 3 digit
 sum=number % 10
