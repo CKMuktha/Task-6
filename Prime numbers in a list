@@ -1,13 +1,15 @@
-list=[10,501,22,37,100,999,87,351]
-count=0
+#Program to count and find prime numbers in a list
+
+mylist=[10,501,22,37,100,999,87,351]
 prime_list=[]
 
-for num in list:
-    
-    for i in range(2,num+1):
-      if num%i==0:
+for i in mylist:               #fixing each number in list for i
+    count=0
+    for j in range(2,i+1):     #fixing j as the divider to divide i in range from 2 to i+1
+      if i%j==0:               # comparing if remainder is 0 to increase the count of prime number
         count+=1
-        
-prime_list.append(num)  
+    if count==1:                   # if count is 1 then we add that number i to prime list
+           prime_list.append(i)  
+         
     
-print(prime_list)        
+print(prime_list)  
